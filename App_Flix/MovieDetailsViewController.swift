@@ -33,6 +33,8 @@ class MovieDetailsViewController: UIViewController {
         let backdropPath = movie["backdrop_path"] as! String
         let backdropURL = URL(string: baseURL + "w780" + backdropPath)
         backdropView.af.setImage(withURL: backdropURL!)
+        
+        print(movie["id"])
     }
     
 
